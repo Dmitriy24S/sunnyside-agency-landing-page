@@ -120,6 +120,13 @@ li:hover {
   cursor: pointer;
   opacity: 0.8;
 }
+/* show hamburger menu */
+.show {
+  display: flex;
+}
+.active {
+  opacity: 0.8;
+}
 /* main content block */
 .content-pair:first-child {
   display: flex;
