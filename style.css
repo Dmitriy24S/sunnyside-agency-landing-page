@@ -127,6 +127,22 @@ li:hover {
 .active {
   opacity: 0.8;
 }
+/* arrow down */
+.arrow-down {
+  margin-top: 4rem;
+  animation: updown 3.3s ease-out infinite;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(25%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 /* main content block */
 .content-pair:first-child {
   display: flex;
