@@ -127,6 +127,22 @@ li:hover {
 .active {
   opacity: 0.8;
 }
+/* arrow down */
+.arrow-down {
+  margin-top: 4rem;
+  animation: updown 3.3s ease-out infinite;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(25%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 /* main content block */
 .content-pair:first-child {
   display: flex;
@@ -320,4 +336,82 @@ li:hover {
 }
 .attribution a:hover {
   opacity: 0.8;
+}
+/* desktop style */
+@media (min-width: 720px) {
+  body {
+    max-width: auto;
+    max-width: none;
+  }
+  /* header */
+  header {
+    background-image: url(./images/desktop/image-header.jpg);
+    height: 550px;
+    /* background-position: bottom; */
+    background-position: center;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .navmenu-links {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    background-color: none;
+    background-color: transparent;
+    padding: 0;
+  }
+  .navmenu-links::before {
+    background-color: none;
+    background-color: transparent;
+    border: none;
+  }
+  .navmenu-links a {
+    color: hsl(232, 10%, 55%);
+    color: white;
+  }
+  .navmenu-links a:hover {
+    color: white;
+    opacity: 0.8;
+  }
+  .contact-link {
+    background-color: white;
+  }
+  /* main content block */
+  .content-pair:first-child {
+    display: flex;
+    flex-direction: row;
+  }
+  .single-content-block {
+    width: 50%;
+  }
+  .content-pair {
+    flex-direction: row;
+    display: flex;
+  }
+  .text {
+    justify-content: center;
+    padding: 10rem;
+  }
+  /* img blocks */
+  .img-block {
+    justify-content: flex-end;
+    background-position: center;
+  }
+  .graphic {
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+  }
+  .photography {
+    background-image: url(./images/desktop/image-photography.jpg);
+  }
+  .testimonials {
+    padding: 10rem 10rem;
+  }
+  .testimonials-wrapper {
+    display: flex;
+  }
+  .footer-imgs {
+    flex-wrap: nowrap;
+  }
 }
